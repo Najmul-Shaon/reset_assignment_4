@@ -19,3 +19,15 @@ function evenOdd(inputString) {
         return console.log("odd");
     }
 }
+
+// problem 03 
+// Here is a function that compares a number to a constant. If the input number is less than the constant number, it will return the subtraction of both. Otherwise, it will produce a multiple of the input number.
+function isLGSeven(inputNumber) {
+    const result = inputNumber - 7;
+    if (result < 7) {
+        return result;
+    }
+    else {
+        return inputNumber * 2;
+    }
+}

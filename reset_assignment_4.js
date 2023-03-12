@@ -1,5 +1,5 @@
 // problem 01
-// here is function to calculate some simple math calculations  
+// here is a function to calculate some simple math calculations  
 function mindGame(inputNumber) {
     const multipleBy3 = inputNumber * 3;
     const add10ToMultiple3 = multipleBy3 + 10;
@@ -13,10 +13,12 @@ function mindGame(inputNumber) {
 function evenOdd(inputString) {
     const stringLength = inputString.length;
     if (stringLength % 2 === 0) {
-        return console.log("even");
+        const printEven = 'even';
+        return printEven;
     }
     else {
-        return console.log("odd");
+        const printOdd = 'odd';
+        return printOdd;
     }
 }
 
@@ -33,7 +35,7 @@ function isLGSeven(inputNumber) {
 }
 
 // problem 04
-
+// here is a function to count bad numbers(negative) from an array
 function findingBadData(inputArrays) {
     let badElements = [];
     for (i = 0; i < inputArrays.length; i++) {
@@ -46,5 +48,19 @@ function findingBadData(inputArrays) {
     return badElementsCount;
 }
 
-const ages = [-4, -9, -5, -33, -55];
-console.log(findingBadData(ages));
+// problem 05
+// here is a function to calculate some simple math calculations
+function gemsToDiamond(first, second, third) {
+    const firstPersonDimond = first * 21;
+    const secondPersonDimond = second * 32;
+    const thirdPersonDimont = third * 43;
+    const totalDimond = firstPersonDimond + secondPersonDimond + thirdPersonDimont;
+    const conditionBindings = 1000 * 2;
+    if (totalDimond >= conditionBindings) {
+        const GetTotalDimond = totalDimond - conditionBindings;
+        return GetTotalDimond;
+    }
+    else {
+        return totalDimond;
+    }
+}

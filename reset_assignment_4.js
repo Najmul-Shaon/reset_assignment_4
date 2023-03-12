@@ -31,3 +31,20 @@ function isLGSeven(inputNumber) {
         return inputNumber * 2;
     }
 }
+
+// problem 04
+
+function findingBadData(inputArrays) {
+    let badElements = [];
+    for (i = 0; i < inputArrays.length; i++) {
+        const arrayElement = inputArrays[i];
+        if (arrayElement <= 0) {
+            badElements.push(arrayElement);
+        }
+    }
+    const badElementsCount = badElements.length;
+    return badElementsCount;
+}
+
+const ages = [-4, -9, -5, -33, -55];
+console.log(findingBadData(ages));
